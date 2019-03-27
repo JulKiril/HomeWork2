@@ -1,0 +1,60 @@
+/*button{
+	margin: 5px;
+    width: 100px;
+    height: 30px;
+    display: block;
+}
+
+table{
+	border: 1px solid black;
+	margin: 0 auto;
+	display: none;
+}
+
+td{
+	border: 1px solid black;
+	width: 150px;
+	height: 150px;
+}
+
+.color {
+	display: table;
+}
+
+.img {
+	display: table;
+}
+*/
+
+/*2-ге завдання*/
+button{
+	width: 70px;
+	height: 20px;
+	background-color: black;
+	color: #ffff;
+	font-size: 10px;
+}
+#icon{
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	top: 200px;
+    left: 400px;
+}
+
+#icon>img{
+	height: 300px;
+	width: 300px;
+}
+
+.transformLeft {
+	transform: rotate(270deg);
+}
+
+.transformRight {
+	transform: rotate(90deg);
+}
+
+.transformDown {
+	transform: rotate(180deg);
+}
