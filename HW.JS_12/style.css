@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main {
+    background-color: grey;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.button{
+    margin: 20px auto;
+    width: 200px;
+}
+
+.button>input {
+    border-radius: 5px;
+    width: 60px;
+    height: 40px;
+    border: 0;
+    outline: none;
+}
+
+.editButton{
+    background-color: yellow;
+}
+.editButton:focus {
+    transition: 1s;
+    border: 2px solid orange;
+}
+
+.styleButton:focus {
+    transition: 1s;
+    border: 2px solid blue;
+}
+
+.styleButton{
+    background-color: skyblue;
+}
+
+.textContainer{
+    padding: 20px;
+    background: grey;
+    border-radius: 5px;
+    min-height: 400px;
+}
+
+.textEdit>textarea{
+    display: block;
+    border-radius: 5px;
+}
+.textEdit>input{
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 60px;
+    height: 40px;
+    border: 0;
+    text-transform: capitalize;
+    color: white; 
+}
+.add {
+    background-color: red;       
+}
+.sv{
+    background-color: green;
+}
+
+.textEdit{
+    display: none;
+}
+
+.textStyle f2{
+    display: block;
+    margin: 10px 0;
+}
+
+.textStyle{
+    display: none;
+}
+
+.dspBlock {
+    display:block;
+}
+
+.tableColor{
+    border: 1px solid black;
+    margin-left: 60%;
+    display: none;
+}
+
+.tableColor td{
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+}
+
+.dspTable {
+    display: table;
+}
+
+.float{
+    float: left;
+}
+
+.choose{
+    width: 70%;
+    margin: 20px auto;
+    background-color: grey;
+    padding: 20px;
+    border-radius: 5px;
+    min-height: 300px;
+    display: none;
+}
+.choise {
+    margin: 10px 10px 10px 0;
+}
+.tableCreate {
+     display: none;
+}
+.tableParam{
+    width: 70%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 20px;
+}
+.tableCreate>span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.tableCreate>select, .borderWidth{
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    margin:20px;
+}
+
+.createBtn {
+    display: block;
+    width: 100px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+.dspBlock{
+    display: block;
+}
+.dspNone {
+    display: none;
+}

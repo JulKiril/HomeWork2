@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	</link>
+</head>
+
+<body>
+	
+<div class="container" id="container">
+	<div id="main" class="main">
+		<p>Lorem ipsum elementum et porta</p>
+		<p>Lorem ipsum elementum et porta</p>
+		<p>Lorem ipsum elementum et porta</p>
+		<p>Lorem ipsum elementum et porta</p>
+		<p>Lorem ipsum elementum et porta</p>
+	</div>
+	<div class="button">
+		<input type="button" value="edit" class="editButton" id="editButton">
+		<input type="button" value="style" class="styleButton" id="styleButton">
+	</div>
+	<div class="textContainer">
+		<form action="" name='textEdit' class="textEdit">
+			<textarea name="area" cols="60" rows="10"></textarea>
+			<input type="button" value="add" name='add' class="add">
+			<input type="button" value="save" name="sv" class="sv">
+		</form>
+		<form action="" name='textStyle' class="textStyle">
+			<f2>Font Size</f2>
+			<label><input type="radio" name="fs" value="12px">12px</label>
+			<label><input type="radio" name="fs" value="14px">14px</label>
+			<label><input type="radio" name="fs" value="16px" checked="checked">16px</label>
+			<label><input type="radio" name="fs" value="18px">18px</label>
+			<label><input type="radio" name="fs" value="20px">20px</label>
+			<f2>Font family</f2>
+			<select name="fontFamily">
+				<option value="choose option">choose option</option>
+				<option value="cursive">cursive</option>
+				<option value="fantasy">fantasy</option>
+				<option value="monospase">monospase</option>
+				<option value="sans-serif">sans-serif</option>
+			</select>
+			<f2>Colors</f2>
+			<input type="button" name="colorBtn" id="colorBtn" value='Color';>
+			<input type="button" name="bgColorBtn" id="bgColorBtn" value='Background color'>
+			<f2>Styles</f2>
+			<label><input type="checkbox" name='fw' value="bold">Bold text</label>
+			<label><input type="checkbox" name='fw' value="italic">Cursive text</label>		
+		</form>
+		<table class="tableColor" id="color" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>red</td>
+				<td>yellow</td>
+				<td>green</td>
+			</tr>
+			<tr>
+				<td>pink</td>
+				<td>olive</td>
+				<td>orange</td>
+			</tr>
+			<tr>
+				<td>blue</td>
+				<td>grey</td>
+				<td>brown</td>
+			</tr>
+		</table>
+
+		<table class="tableColor" id="bgColor" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>coral</td>
+				<td>yellow</td>
+				<td>green</td>
+			</tr>
+			<tr>
+				<td>pink</td>
+				<td>olive</td>
+				<td>magenta</td>
+			</tr>
+			<tr>
+				<td>blue</td>
+				<td>grey</td>
+				<td>lavender</td>
+			</tr>
+		</table>		
+	</div>
+</div>
+<div class="choose" id="choose">
+		<h2>Choose what you want:</h2>
+		<form action="" name='choise' class="choise">
+			<label><input type="radio" name="table" value="table">table</label>
+			<label><input type="radio" name="list" value="list">list</label>		
+		</form>	
+		<form action="" name='tableCreate' class="tableCreate">
+			<span>Count tr:</span><input type="text"  name="tr" placeholder="Count tr" class="tableParam">
+			<br><span>Count td:</span><input type="text" name="td" placeholder="Count td" class="tableParam">			
+			<h2>Add style to your table</h2>
+			<br><span>Width of Td:</span><input type="text" name="tdWidth" placeholder="Width of Td" class="tableParam">
+			<br><span>Height of Td:</span><input type="text" name="tdHeight" placeholder="Height of Td" class="tableParam">
+			<br><span>Width of border:</span><input class="borderWidth" type="text" name="borderWidth" placeholder="Width ">
+			<span>Type of border:</span><select name="tableBorderType" placeholder="Type of border">
+				<option value="solid">solid</option>
+				<option value="dotted">dotted</option>
+				<option value="dashed">dashed</option>
+				<option value="double">double</option>				
+			</select>
+			<span>Color of border:</span><select name="tableBorderColor">
+				<option value="black">black</option>
+				<option value="red">red</option>
+				<option value="blue">blue</option>
+				<option value="green">green</option>				
+			</select>
+		<input type="button" value="Create table" name="createBtn" class="createBtn">	
+		</form>
+		
+	</div>
+<script src="script.js"></script>
+</body>
+
+</html>
