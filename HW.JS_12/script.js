@@ -93,15 +93,17 @@ textEdit.add.addEventListener('click', function(){
 	choose.classList.add('dspBlock');
 })
 
+//Choose table
 let choiseBtns = document.forms['choise'];
 let tableCreate = document.forms['tableCreate'];
 choiseBtns.table.addEventListener('click', function(){
 	choiseBtns.list.checked = false;
 	tableCreate.classList.add('dspBlock');
+	listCreate.classList.remove('dspBlock');
 })
 
 //create table
-tableCreate.createBtn.addEventListener('click', function(){
+tableCreate.createTableBtn.addEventListener('click', function(){
 	let tr = +tableCreate.tr.value;
 	let td = +tableCreate.td.value;
 	let widthTd = tableCreate.tdWidth.value;
@@ -135,8 +137,32 @@ tableCreate.createBtn.addEventListener('click', function(){
 	textEdit.area.value += `</table>`;
 })
 
-//Save table
+//Choose list
+let listCreate = document.forms['listCreate'];
+choiseBtns.list.addEventListener('click', function(){
+	choiseBtns.table.checked = false;
+	listCreate.classList.add('dspBlock');
+	tableCreate.classList.remove('dspBlock');
+})
 
+// Create list
+listCreate.createListBtn.addEventListener('click', function(){
+	let liCount = listCreate.liCount.value;
+	let markType;
+	for(let i = 0; i<listCreate.markType.options.length; i++){
+		if(listCreate.markType.options[i].selected){
+			markType = listCreate.markType.value;
+		}
+	}
+	container.classList.remove('dspNone');
+	choose.classList.remove('dspBlock');
+	textEdit.classList.add('dspBlock');
+	textEdit.area.value+=`<ul style="list-style-type:${markType}">`;
+	for(let j = 1; j<=liCount; j++){
+		textEdit.area.value+= `<li >item ${j}</li>`;
+	}
+	
+})
 
 
 

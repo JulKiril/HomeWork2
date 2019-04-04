@@ -142,7 +142,7 @@
     margin:20px;
 }
 
-.createBtn {
+.createTableBtn {
     display: block;
     width: 100px;
     height: 40px;
@@ -151,6 +151,28 @@
     border-radius: 5px;
     border: none;
 }
+
+.liCount, .listCreate>select{
+    width: 70%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.createListBtn {
+    display: block;
+    width: 100px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.listCreate{
+    display: none;
+}
+
 .dspBlock{
     display: block;
 }

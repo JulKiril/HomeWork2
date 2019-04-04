@@ -1,0 +1,28 @@
+button{
+	margin: 5px;
+    width: 100px;
+    height: 30px;
+    display: block;
+}
+
+table{
+	border: 1px solid black;
+	margin: 0 auto;
+	display: none;
+}
+
+td{
+	border: 1px solid black;
+	width: 150px;
+	height: 150px;
+}
+
+.color {
+	display: table;
+}
+
+.img {
+	display: table;
+}
+
+
