@@ -33,6 +33,7 @@ sign.signBtn.addEventListener('click', function () {
         sign.pos.value = sign.pos.options[0].value;
         sign.sex[0].checked = true;
         sign.check.checked = false;
+        sign.signBtn.classList.remove('opac');
     }
 })
 signOutBtn.addEventListener('click', function(){
