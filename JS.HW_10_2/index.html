@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	</link>
+</head>
+
+<body>
+<form action="" name="sign" class="sign">
+	<h1>Sign In</h1>
+	<h2>First Name</h2>
+	<input type="text" name="fn">
+	<h2>Second Name</h2>
+	<input type="text" name="sn">
+	<h2>Email</h2>
+	<input type="email" name="em">
+	<label><input type="radio" name="sex" value="man" checked>man</label>
+	<label><input type="radio" name="sex" value="woman" >woman</label>
+	<h2>Position</h2>
+	<select name="pos" id="">
+		<option value="choose...">choose...</option>
+		<option value="frontend">frontend</option>
+		<option value="backend">backend</option>
+		<option value="QA">QA</option>
+	</select>
+		<label><input type="checkbox" name="check" id="">I agree all conditions</label>
+	<hr>
+
+	<input type="button" name="signBtn" value="Sign In" class="opac">
+	
+</form>
+<div class="container" id="container">
+	<div class="top"></div>
+	<div class="main" id="main">
+		<h2 class="login"></h2>
+		<h2 class="mail" id="mail"></h2> 
+		<h2 class="pos"></h2>	
+	</div>
+	<hr>
+	<input type="button" class="signOut" id="signOut" value="Sign Out">	
+	<div class="bottom">
+		<img src="img/fb.png" alt="">
+		<img src="img/git.png" alt="">
+		<img src="img/link.png" alt="">
+
+	</div>
+</div>
+	<script src="script.js"></script>
+</body>
+
+</html>

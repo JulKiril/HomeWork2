@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.move>input {
+    width: 200px;
+    height: 30px;
+    margin: 20px;
+}
+.move>input[type="button"]{
+    background-color: greenyellow;
+}
+
+.pls>input{
+    width: 690px;
+    height: 30px;
+    margin: 20px;
+}
