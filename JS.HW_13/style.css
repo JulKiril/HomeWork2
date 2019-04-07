@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sign {
+    width: 300px;
+    margin: 20px auto;
+    background: white;
+    border: 1px solid grey;
+    border-radius: 5px;
+
+}
+
+.sign>h1 {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    background-color: greenyellow;
+    border-radius: 5px 5px 0 0;
+    height: 30px;
+    padding: 5px;
+}
+
+.sign>h2, .sign>input, .sign>select, .sign>label {
+    margin: 5px 20px;
+}
+
+.sign>h2 {
+    font-size: 14px;
+}
+
+.sign>input, .sign>select {
+    width: 80%;
+    height: 30px;
+    border-radius: 2px;
+}
+
+.sign>input[type="radio"] {
+    width: 10px;
+    height: 10px;
+}
+
+.sign input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px 10px 0;
+}
+
+.sign>input[type="button"] {
+    background-color: greenyellow;
+    color: white;
+}
+.opac{
+    opacity: 0.5; 
+}
+
+.container {
+    text-align: center;
+    margin: auto auto;
+    width: 500px;
+    border: 1px solid grey;
+    position: relative;
+    display: none;
+}
+
+.top {
+    background-color: green;
+    height: 100px;
+}
+
+.main {
+    height: 200px;
+    text-align: center;
+    padding: 0px;
+    padding-top: 70px;
+}
+
+.mail, .pos {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.container::before {
+    position: absolute;
+    top: 60px;
+    left: 43%;
+    content: "";
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    border: 2px double white;
+}
+
+.male::before {
+    background: url("img/male.png");
+    background-color: aquamarine;
+    background-size: 100% 100%;
+}
+
+.female::before {
+    background: url("img/female.png");
+    background-color: aquamarine;
+    background-size: 100% 100%;
+}
+
+.signOut {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid green;
+    color: green;
+    background-color: white;
+    border-radius: 3px;
+    width: 70px;
+    height: 30px;
+}
+
+.signOut:hover {
+    background-color: green;
+    color: white;
+}
+
+
+.bottom {
+    background-color: green;
+    text-align: center;
+    padding: 5px;
+}
+
+.bottom>img {
+    width: 30px;
+    height: 30px;
+}
+.dspBlock{
+    display: block;
+}
+.dspNone{
+    display: none;
+}
