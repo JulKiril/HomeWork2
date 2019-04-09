@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slider{
+    background: url(img/1.jpg);
+    margin: 30px auto;
+    border: 1px solid black;
+    width: 500px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.arrow{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 46%;
+    background: #fff;
+    border-radius: 10px;
+    opacity: 0.5;
+    transition: 0.3s ease;
+}
+
+.playBtn{
+    width: 50px;
+    text-transform: capitalize;
+    position: absolute;
+    font-size: 10px;
+    bottom: 10px;
+    left: 5px;
+    z-index: 1;
+}
+.left{
+    left: 20px;
+ }
+
+.right{
+    right: 20px;
+}
+
+.left:hover{
+    opacity: 0.9;
+}
+
+.right:hover{
+    opacity: 0.9;
+}
+
+.slider__lable {
+	position: absolute;
+	bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.slider__lable input{
+	display: none;
+}
+.slider__lable span {
+	cursor: pointer;
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	border-radius: 10px;
+	background: white;
+	position: relative;
+	margin: 2px;
+}
+
+.slider__lable span::before {
+	content: "";
+	position: absolute;
+	top: 1px;
+	bottom: 1px;
+	left: 1px;
+	right: 1px;
+	background:rgba(64, 67, 76, 1);
+	border-radius: 100px;
+	transform: scale(0);
+}
+
+.slider__lable input:checked+span::before {
+	transform: scale(1);
+
+}
+
+.over{
+    display: none;
+    position: absolute;
+    top:-30px;
+    left:170px;
+	content: "";
+	height: 30px;
+	width: 49px;
+    background: url("img/9.jpg");
+    background-size: 100% 100%;
+}
+.dspBlock {
+    display: block;
+}
