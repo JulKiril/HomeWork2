@@ -19,7 +19,7 @@ czF.czBtn.addEventListener('click', function () {
             for (let k = 0; k < arr1[i].length; k++) {
                 strRepl += repl;
             }
-            str = str.replace(arr1[i], strRepl);
+            str = str.replace(new RegExp(arr1[i], "g"), strRepl);
         }    
 czF.txt.value = str;
 console.log(str);
