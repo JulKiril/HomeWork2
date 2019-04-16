@@ -102,11 +102,13 @@ let bgColorCell = getClass("bgColorTd");
 fillTable(bgColorTable,bgColorCell);
 bgColorTable.addEventListener('click',function(){
     window.document.body.style.backgroundColor = event.target.style.backgroundColor;
+	 window.document.body.style.backgroundImage = ``;
 })
 let bgImgTable = getId("bgImgTable");
 bgImgTable.addEventListener('click',function(){
     let bg = event.target.getAttribute("src");
     window.document.body.style.backgroundImage = `url("${bg}")`
+
 })
 
 ///////////////////////////////////////////////////////////BACKGROUND - LOADED FILE
