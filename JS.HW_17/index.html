@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+<!--MAIN CONTAINER-->
+<div class="container-fluid wrapp" id="mainContainer">
+    <nav class="navbar navbar-expand-lg bg-secondary" >
+        <div class="btn-toolbar mx-auto" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group mr-2" role="group" aria-label="First group">
+                <button type="button" class="btn btn-light font-weight-bold" id="tableMenuBtn">&#60;/&#62;</button>
+            </div>
+            <div class="btn-group mr-2 " role="group" aria-label="Second group">
+                <button type="button" class="btn btn-light fontStyle"><i class="fas fa-bold"></i></button>
+                <button type="button" class="btn btn-light fontStyle"><i class="fas fa-italic"></i></button>
+                <button type="button" class="btn btn-light fontStyle"><i class="fas fa-underline"></i></button>
+                <button type="button" class="btn btn-light fontStyle"><i class="fas fa-strikethrough"></i></button>
+            </div>
+            <div class="btn-group mr-2" role="group" aria-label="Third group">
+                <button type="button" class="btn btn-light justify"><i class="fas fa-align-left"></i></button>
+                <button type="button" class="btn btn-light justify"><i class="fas fa-align-center"></i></button>
+                <button type="button" class="btn btn-light justify"><i class="fas fa-align-right"></i></button>
+            </div>
+            <div class="btn-group mr-2" role="group" aria-label="Fourth group">
+                <div class="dropdown">
+                    <button type="button" class="btn btn-light dropdown-toggle" id="dropdownMenu2"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-font"></i></button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item ff" type="button">Arial</button>
+                        <button class="dropdown-item ff" type="button">Georgia</button>
+                        <button class="dropdown-item ff" type="button">Impact</button>
+                        <button class="dropdown-item ff" type="button">Tahoma</button>
+                        <button class="dropdown-item ff" type="button">Times New Roman</button>
+                        <button class="dropdown-item ff" type="button">Verdana</button>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-light dropdown-toggle radiusNone" id="dropdownMenu2"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-text-height"></i></button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item fs" type="button">12px</button>
+                        <button class="dropdown-item fs" type="button">14px</button>
+                        <button class="dropdown-item fs" type="button">16px</button>
+                        <button class="dropdown-item fs" type="button">18px</button>
+                        <button class="dropdown-item fs" type="button">20px</button>
+                        <button class="dropdown-item fs" type="button">22px</button>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-light radiusNone" data-toggle="modal" data-target="#exampleModal">
+                    <i class="fas fa-palette"></i></button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                     aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <table id="colorTable" class="colorTable">
+                                    <tr>
+                                        <td class="colorTd"></td>
+                                        <td class="colorTd"></td>
+                                        <td class="colorTd"></td>
+                                        <td class="colorTd"></td>
+                                        <td class="colorTd"></td>
+                                        <td class="colorTd"></td>
+                                        <td class="colorTd"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="colorTd"></td>
+                                        <td class="colorTd"></td>
+                                        <td class="colorTd"></td>
+                                        <td class="colorTd"></td>
+                                        <td class="colorTd"></td>
+                                        <td class="colorTd"></td>
+                                        <td class="colorTd"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="colorTd"></td>
+                                        <td class="colorTd"></td>
+                                        <td class="colorTd"></td>
+                                        <td class="colorTd"></td>
+                                        <td class="colorTd"></td>
+                                        <td class="colorTd"></td>
+                                        <td class="colorTd"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-light lastBtn" data-toggle="modal" data-target="#exampleModal1"><i
+                        class="fas fa-image"></i></button>
+                <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog"
+                     aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="colorBg-tab" data-toggle="tab" href="#colorBg"
+                                           role="tab" aria-controls="home" aria-selected="true">Colors</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="bgImg-tab" data-toggle="tab" href="#bgImg" role="tab"
+                                           aria-controls="bgImg" aria-selected="false">Images</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="files-tab" data-toggle="tab" href="#files"
+                                           role="tab" aria-controls="files" aria-selected="false">Files</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="colorBg" role="tabpanel"
+                                         aria-labelledby="colorBg-tab">
+                                        <table id="bgColorTable" class="bgColorTable">
+                                            <tr>
+                                                <td class="bgColorTd"></td>
+                                                <td class="bgColorTd"></td>
+                                                <td class="bgColorTd"></td>
+                                                <td class="bgColorTd"></td>
+                                                <td class="bgColorTd"></td>
+                                                <td class="bgColorTd"></td>
+                                                <td class="bgColorTd"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bgColorTd"></td>
+                                                <td class="bgColorTd"></td>
+                                                <td class="bgColorTd"></td>
+                                                <td class="bgColorTd"></td>
+                                                <td class="bgColorTd"></td>
+                                                <td class="bgColorTd"></td>
+                                                <td class="bgColorTd"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bgColorTd"></td>
+                                                <td class="bgColorTd"></td>
+                                                <td class="bgColorTd"></td>
+                                                <td class="bgColorTd"></td>
+                                                <td class="bgColorTd"></td>
+                                                <td class="bgColorTd"></td>
+                                                <td class="bgColorTd"></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="bgImg" role="tabpanel" aria-labelledby="bgImg-tab">
+                                        <table id="bgImgTable">
+                                            <tr>
+                                                <td class="imgBg"><img src="img/1.jpg" alt=""></td>
+                                                <td class="imgBg"><img src="img/2.jpg" alt=""></td>
+                                                <td class="imgBg"><img src="img/3.jpg" alt=""></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="imgBg"><img src="img/4.jpg" alt=""></td>
+                                                <td class="imgBg"><img src="img/5.jpg" alt=""></td>
+                                                <td class="imgBg"><img src="img/6.jpg" alt=""></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="imgBg"><img src="img/7.jpg" alt=""></td>
+                                                <td class="imgBg"><img src="img/8.jpg" alt=""></td>
+                                                <td class="imgBg"><img src="img/9.jpg" alt=""></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="tab-pane fade" id="files" role="tabpanel"
+                                         aria-labelledby="files-tab">
+                                        <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+                                            <label>
+                                            <input type="file" id="loadFile">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Choose file"
+                                                       aria-label="Input group example" aria-describedby="btnGroupAddon">
+                                                <div class="input-group-append">
+                                                    <div class="input-group-text" id="btnGroupAddon">Browse</div>
+                                                </div>
+                                            </div>
+                                            </label>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-group" role="group" aria-label="Fives group">
+                <button type="button" class="btn btn-light" id="lockBtn"><i class="fas fa-lock"></i></button>
+            </div>
+    </nav>
+
+<main>
+    <div id="textEdit">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. </p>
+    </div>
+</main>
+
+</div>
+<!--EDIT CONTAINER-->
+<div class="container-fluid wrapp dspNone" id="editContainer"  >
+    <nav class="navbar navbar-expand-lg bg-secondary" id="tableListNav">
+        <div class="btn-toolbar mx-auto" role="toolbar" aria-label="Toolbar with button groups">
+
+            <div class="btn-group mr-2 " role="group" aria-label="Third group">
+                <button type="button" class="btn btn-light fontStyle" id="saveBtn"><i class="fas fa-save"></i></button>
+                <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModalLong"><i class="fas fa-table"></i></button>
+                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <form name="tableCreate">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputTr4">Count TR</label>
+                                            <input type="text" name="tr" class="form-control" id="inputTr4" placeholder="Type Here">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="inputTd4">Count TD</label>
+                                            <input type="text" name="td" class="form-control" id="inputTd4" placeholder="Type Here">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputTr4W">Width of TR</label>
+                                            <input type="text" name="tdWidth" class="form-control" id="inputTr4W" placeholder="Type Here">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="inputTd4W">Width of TD</label>
+                                            <input type="text" name="tdHeight" class="form-control" id="inputTd4W" placeholder="Type Here">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputBorderW">Width of border</label>
+                                            <input type="text" name="borderWidth"class="form-control" id="inputBorderW">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="inputBorderStyle">Stale of border</label>
+                                            <select id="inputBorderStyle" name="borderType" class="form-control">
+                                                <option selected>dotted</option>
+                                                <option>dashed</option>
+                                                <option>double</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-2">
+                                            <label for="inputBorderColor">Color of border</label>
+                                            <select id="inputBorderColor" name="borderColor" class="form-control">
+                                                <option selected>red</option>
+                                                <option>yellow</option>
+                                                <option>green</option>
+                                            </select>
+                                            <!--<input type="text" name="borderColor" class="form-control" id="inputBorderColor">-->
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <button type="button" class="btn btn-danger resetBtn" id="resetBtn" >Reset</button>
+                                        </div>
+                                        <div class="form-group col-md-6">
+
+                                            <button type="button" class="btn btn-success createBtn" id="createBtn">Create</button>
+
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-light fontStyle" data-toggle="modal" data-target="#exampleModalLong1"><i class="fas fa-list-ol"></i></button>
+                <div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+
+                            <div class="modal-body">
+                                <form name="olListCreate">
+                                        <div class="form-group">
+                                            <label for="inputLiCount">Count of Li</label>
+                                            <input type="text" name="liCount" class="form-control" id="inputLiCount" placeholder="Type Here">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="inputLiType">Stale of border</label>
+                                            <select id="inputLiType" name="typeMark" class="form-control">
+                                                <option selected value="decimal">1, 2, 3, 4</option>
+                                                <option value="upper-alpha">A, B, C, D</option>
+                                                <option value="upper-roman">I, II, III, IV, V</option>
+                                            </select>
+                                        </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <button type="button" class="btn btn-danger resetBtn">Reset</button>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <button type="button" class="btn btn-success createBtn" id="createBtnOl">Create</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <button type="button" class="btn btn-light lastBtn fontStyle" data-toggle="modal" data-target="#exampleModalLong2"><i class="fas fa-list-ul"></i></button>
+                <div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <form name="ulListCreate">
+                                    <div class="form-group">
+                                        <label for="inputUlLiCount">Count of Li</label>
+                                        <input type="text" name="liCount" class="form-control" id="inputUlLiCount" placeholder="Type Here">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputUlLiType">Stale of border</label>
+                                        <select id="inputUlLiType" name="typeMark" class="form-control">
+                                            <option selected value="disc">disc</option>
+                                            <option value="circle">circle</option>
+                                            <option value="square">square</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <button type="button" class="btn btn-danger resetBtn">Reset</button>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <button type="button" class="btn btn-success createBtn" id="createBtnUl">Create</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <textarea class="fixed-textarea" name="textReplace" id="textReplace" rows="25"></textarea>
+    </div>
+
+</div>
+<!--MODAL WINDOW-->
+<div class="modalWindow dspNone" id="modalWindow">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title">Sign In</h3>
+        </div>
+        <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter login" id="login">
+        <input type="password" class="form-control" placeholder="Password" id="pass">
+        <input type="button" value="Sign In" id="signIn" class="btn btn-secondary">
+        </div>
+</div>
+<script src="js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
