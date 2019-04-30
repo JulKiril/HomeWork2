@@ -12,7 +12,6 @@ for (let i = 0; i <= 9; i++) {
 }
 imgArr.shift();
 let start =1;
-console.log(imgArr);
 let check = true;
 let mySlider;
 playBtn.addEventListener('click', function () {
@@ -28,24 +27,32 @@ playBtn.addEventListener('click', function () {
     }
 })
 
-
-for (i = 0; i < form.point.length; i++) {
-    form.point[i].index = i;
-     form.point[i].addEventListener('mouseover', function(){
-        console.log(event.target);
+let label = document.getElementsByTagName('label');
+console.log(label);
+for(let i = 0; i<label.length; i++) {
+    label[i].addEventListener('mouseover', function(){
+        label[i].index = i;
         over.classList.add('dspBlock');
-        // over.style.background = `url(${imgArr[event.target.index]})`;
+        over.style.background = `url(${imgArr[label[i].index]})`;
+        over.style.backgroundSize = `100% 100%`;
+        over.style.backgroundRepeat = `no-repeat`;
     })
+    label[i].addEventListener('mouseout', function () {
+        over.classList.remove('dspBlock');
+    })
+}
+
+for (let i = 0; i < form.point.length; i++) {
+    form.point[i].index = i;
     form.point[i].addEventListener('click', function () {
         slider.style.background = `url(${imgArr[event.target.index]})`;
         slider.style.backgroundSize = `100% 100%`;
         slider.style.backgroundRepeat = `no-repeat`;
         console.log(event.target.index);
-        start = event.target.index + 1;         
-        console.log(start); 
-        rightBtn.addEventListener('click', moveLeft);        
+        start = event.target.index + 1;
+        console.log(start);
+        rightBtn.addEventListener('click', moveLeft);
     })
-   
 }
 rightBtn.addEventListener('click', moveLeft);
 function moveLeft() {

@@ -8,8 +8,8 @@
     background: url(img/1.jpg);
     margin: 30px auto;
     border: 1px solid black;
-    width: 500px;
-    height: 300px;
+    width: 600px;
+    height: 400px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
@@ -19,17 +19,17 @@
 
 .arrow{
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     top: 46%;
     background: #fff;
-    border-radius: 10px;
+    border-radius: 50%;
     opacity: 0.5;
     transition: 0.3s ease;
 }
 
 .playBtn{
-    width: 50px;
+    width: 60px;
     text-transform: capitalize;
     position: absolute;
     font-size: 10px;
@@ -66,8 +66,8 @@
 .slider__lable span {
 	cursor: pointer;
 	display: inline-block;
-	width: 5px;
-	height: 5px;
+	width: 10px;
+	height: 10px;
 	border-radius: 10px;
 	background: white;
 	position: relative;
@@ -88,19 +88,17 @@
 
 .slider__lable input:checked+span::before {
 	transform: scale(1);
-
 }
 
 .over{
     display: none;
     position: absolute;
     top:-30px;
-    left:170px;
+    left:50%;
+    transform: translateX(-50%);
 	content: "";
 	height: 30px;
 	width: 49px;
-    background: url("img/9.jpg");
-    background-size: 100% 100%;
 }
 .dspBlock {
     display: block;
