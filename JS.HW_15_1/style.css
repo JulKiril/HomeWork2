@@ -5,7 +5,6 @@
 }
 
 .slider{
-    background: url(img/1.jpg);
     margin: 30px auto;
     border: 1px solid black;
     width: 600px;
@@ -14,9 +13,26 @@
     background-size: 100% 100%;
     position: relative;
     overflow: hidden;
-    transition: 0.3s;
+    transition: 0.2s;
+}
+.sliderImg {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
 }
 
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
 .arrow{
     position: absolute;
     width: 30px;
@@ -26,6 +42,7 @@
     border-radius: 50%;
     opacity: 0.5;
     transition: 0.3s ease;
+    z-index: 4;
 }
 
 .playBtn{
@@ -35,7 +52,7 @@
     font-size: 10px;
     bottom: 10px;
     left: 5px;
-    z-index: 1;
+    z-index: 10;
 }
 .left{
     left: 20px;
@@ -58,6 +75,7 @@
 	bottom: 10px;
     width: 100%;
     text-align: center;
+    z-index: 4;
 }
 
 .slider__lable input{
@@ -93,13 +111,17 @@
 .over{
     display: none;
     position: absolute;
-    top:-30px;
+    top:-60px;
     left:50%;
     transform: translateX(-50%);
 	content: "";
-	height: 30px;
-	width: 49px;
+	height: 60px;
+	width: 100px;
 }
 .dspBlock {
     display: block;
 }
+.dspNone{
+    display: none;
+}
+
