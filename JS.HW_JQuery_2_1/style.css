@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+.ball{
+    width: 100px;
+    height: 100px;
+    border: 10px solid beige;
+    background-color: rgb(107,26,107);
+    box-shadow: 5px 5px 30px 20px rgba(107,26,107,0.9);
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
