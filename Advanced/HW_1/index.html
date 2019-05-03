@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+<div class="wrapper">
+    <img src="img/1.png" alt="" class="female">
+    <img src="img/2.png" alt="" class="male dspNone">
+
+<div class="gameContainer" id="gameContainer">
+    <div class="player" id="player"><span>Player 1</span><span>- your move</span></div>
+    <form action="" name="line1">
+        <input type="button" name = "0" value="0">
+        <input type="button" name = "1" value="0">
+        <input type="button" name = "2" value="0">
+    </form>
+    <form action="" name="line2">
+        <input type="button" name = "3" value="0">
+        <input type="button" name = "4" value="0">
+        <input type="button" name = "5" value="0">
+    </form>
+    <form action="" name="line3">
+        <input type="button" name = "6" value="0">
+        <input type="button" name = "7" value="0">
+        <input type="button" name = "8" value="0">
+    </form>
+</div>
+</div>
+<div class="modal dspNone" id="modal">
+    <div id="result" class="result">
+        <div class="draw dspNone" style="padding-top:69.388%;position:relative;"><iframe src="https://gifer.com/embed/1S5g" width="100%" height="100%" style='position:absolute;top:0;left:0;' frameBorder="0" allowFullScreen></iframe></div>
+        <div class="femaleRes dspNone" style="padding-top:69.388%;position:relative;"><iframe src="https://gifer.com/embed/Hcm" width="100%" height="100%" style='position:absolute;top:0;left:0;' frameBorder="0" allowFullScreen></iframe></div>
+        <!--<img src="img/1.png" alt="" >-->
+        <div class="maleRes dspNone" style="padding-top:57.143%;position:relative;"><iframe src="https://gifer.com/embed/Lvy" width="100%"
+        height="100%" style='position:absolute;top:0;left:0;' frameBorder="0" allowFullScreen></iframe>
+        </div>
+        <!--<img src="img/2.png" alt="">-->
+        <h2 id="textResult">Congratulations, you won!</h2>
+        <input type="button" class="playAgain" id="playAgain" value="Play again">
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

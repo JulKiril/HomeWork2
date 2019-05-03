@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    background-color: lightgray;
+}
+.wrapper{
+    position: relative;
+    width: 100%;
+}
+.player{
+    font-size: 30px;
+    width: 300px;
+    margin: 10px auto;
+    color: deeppink;
+}
+.gameContainer{
+    width: 320px;
+    margin: 20px auto;
+}
+
+.gameContainer input[type ="button"] {
+    display: inline-block;
+    width: 100px;
+    height:100px;
+    color:rgba(255,255,255, 0);
+    margin-bottom: 2px;
+    font-weight: bold;
+    font-size: 100px;
+}
+.wrapper img{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+
+}
+.female{
+    left:20px;
+}
+.male{
+    right: 10px;
+}
+.dspNone{
+    display: none;
+}
+
+.modal input[type ="button"]{
+    border-radius:8px;
+    height:50px;
+    width:100px;
+    /*made by JulKiril*/
+    margin-top: 10px;
+    margin-bottom:20px;
+    color:black;
+    }
+
+.modal{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgba(0,0,0, 0.4);
+}
+
+.result{
+    padding:20px;
+    border-radius:10px;
+    width:50%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    background-color:#FFF;
+    transform:translate(-50%,-50%);
+    box-shadow:4px 4px 8px rgba(0,0,0, 0.8);
+    text-align:center;
+}
+.result img {
+    width: 400px;
+    height: 400px;
+}
