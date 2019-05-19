@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color:rgba(204,204,204, 1);
+    background: linear-gradient(to top, #ffffff, #BFBFBF);
+}
+
+.experience div{
+    margin: 20px;
+
+
+}
+.year{
+    width: 500px;
+    height: 40px;
+    border-radius: 5px;
+}
+.show{
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+.show:hover{
+    background-color: lightgrey;
+}
+
+.experience img {
+    width:130px;
+    height:130px;
+}
+.experience h2 {
+    font-size:20px;
+}
+.about{
+    font-size: 20px;
+    line-height: 1.5;
+}
