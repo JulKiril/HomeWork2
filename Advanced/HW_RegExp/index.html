@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2">
+            <input type="text" class="form-control param" placeholder="1.Chaist Girth">
+        </div>
+        <div class="col-md-2">
+            <button type="button" class="btn btn-danger paramsBtn checker">Null</button>
+            <button type="button" class="btn btn-danger errBtn dspNone checker">Not a number</button>
+        </div>
+        <div class="col-md-5 offset-md-1">
+            <div class="slideWrap">
+                <div class="slider" id="slider">
+                    <img src="img/1.jpg" alt="clothes" class="sliderImg current">
+                    <img src="img/2.jpg" alt="clothes" class="sliderImg ">
+                    <img src="img/3.jpg" alt="clothes" class="sliderImg ">
+                    <img src="img/4.jpg" alt="clothes" class="sliderImg ">
+                    <img src="img/5.jpg" alt="clothes" class="sliderImg ">
+                    <img src="img/6.jpg" alt="clothes" class="sliderImg ">
+                    <img src="img/7.jpg" alt="clothes" class="sliderImg ">
+                    <img src="img/8.jpg" alt="clothes" class="sliderImg ">
+                    <img src="img/9.jpg" alt="clothes" class="sliderImg ">
+                    <img src="img/left.png" alt="clothes" class="arrow prew" id="leftBtn">
+                    <img src="img/right.png" alt="clothes" class="arrow next" id="rightBtn">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <input type="text" class="form-control param" placeholder="2.Waist Girth">
+        </div>
+        <div class="col-md-2">
+            <button type="button" class="btn btn-danger paramsBtn checker">Null</button>
+            <button type="button" class="btn btn-danger errBtn dspNone checker">
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <input type="text" class="form-control param" placeholder="3.Hip Girth">
+        </div>
+        <div class="col-md-2">
+            <button type="button" class="btn btn-danger paramsBtn">Null</button>
+            <button type="button" class="btn btn-danger errBtn dspNone">
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <input type="text" class="form-control param" placeholder="4.Breast Height">
+        </div>
+        <div class="col-md-2">
+            <button type="button" class="btn btn-danger paramsBtn">Null</button>
+            <button type="button" class="btn btn-danger errBtn dspNone">
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <input type="text" class="form-control param" placeholder="5.Forward Length">
+        </div>
+        <div class="col-md-2">
+            <button type="button" class="btn btn-danger paramsBtn">Null</button>
+            <button type="button" class="btn btn-danger errBtn dspNone">
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <input type="text" class="form-control param" placeholder="6.Length of the product">
+        </div>
+        <div class="col-md-2">
+            <button type="button" class="btn btn-danger paramsBtn">Null</button>
+            <button type="button" class="btn btn-danger errBtn dspNone">
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <input type="text" class="form-control param" placeholder="7.Back Length">
+        </div>
+        <div class="col-md-2">
+            <button type="button" class="btn btn-danger paramsBtn">Null</button>
+            <button type="button" class="btn btn-danger errBtn dspNone">
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <input type="text" class="form-control param" placeholder="8.Width Spins">
+        </div>
+        <div class="col-md-2">
+            <button type="button" class="btn btn-danger paramsBtn">Null</button>
+            <button type="button" class="btn btn-danger errBtn dspNone">
+            </button>
+        </div>
+        <div class="col-md-5 offset-md-1">
+            <h4>Контактні дані клієнта</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <input type="text" class="form-control param" placeholder="9.Shoulder Width">
+        </div>
+        <div class="col-md-2">
+            <button type="button" class="btn btn-danger paramsBtn">Null</button>
+            <button type="button" class="btn btn-danger errBtn dspNone">
+            </button>
+        </div>
+        <div class="col-md-4 offset-md-1">
+            <input id="name" type="text" class="form-control" placeholder="П.І.Б.">
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-danger" id="nameBtn">Null</button>
+            <button type="button" class="btn btn-danger  dspNone" id="nameErrBtn">
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <input type="text" class="form-control param" placeholder="10.Shoulder Length">
+        </div>
+        <div class="col-md-2">
+            <button type="button" class="btn btn-danger paramsBtn">Null</button>
+            <button type="button" class="btn btn-danger errBtn dspNone">
+            </button>
+        </div>
+        <div class="col-md-4 offset-md-1">
+            <input type="text" class="form-control" id="phone" placeholder="Номер телефону" maxlength="18">
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-danger" id="phoneBtn">Null</button>
+            <button type="button" class="btn btn-danger  dspNone" id="phoneErrBtn">
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <input type="text" class="form-control param" placeholder="11.Sleeve Length">
+        </div>
+        <div class="col-md-2">
+            <button type="button" class="btn btn-danger paramsBtn">Null</button>
+            <button type="button" class="btn btn-danger errBtn dspNone">
+            </button>
+        </div>
+        <div class="col-md-4
+
+ offset-md-1">
+            <input type="text" class="form-control" id="mail" placeholder="E-mail">
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-danger" id="mailBtn">Null</button>
+            <button type="button" class="btn btn-danger dspNone" id="mailErrBtn"></button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <input type="text" class="form-control param" placeholder="12.Arm Circumference">
+        </div>
+        <div class="col-md-2">
+            <button type="button" class="btn btn-danger paramsBtn">Null</button>
+            <button type="button" class="btn btn-danger errBtn dspNone">
+            </button>
+        </div>
+        <div class="col-md-4
+
+ offset-md-1">
+            <input id="height" type="text" class="form-control" placeholder="Зріст">
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-danger" id="heightBtn">Null</button>
+            <button type="button" class="btn btn-danger dspNone" id="heightErrBtn">
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <input type="text" class="form-control param" placeholder="13.Neck Circumference">
+        </div>
+        <div class="col-md-2">
+            <button type="button" class="btn btn-danger paramsBtn">Null</button>
+            <button type="button" class="btn btn-danger errBtn dspNone"></button>
+        </div>
+        <div class="col-md-4 offset-md-1">
+            <button type="button" class="btn btn-danger okBtn" id="okBtn">Ok</button>
+        </div>
+    </div>
+</div>
+<script src="script1.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
