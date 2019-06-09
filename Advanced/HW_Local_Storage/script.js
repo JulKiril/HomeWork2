@@ -12,14 +12,18 @@ function User(login, pass, email) {
 //////////////////////////////////////////////render Table function/////////////////////////////////////////////////////
 let t1 = document.getElementsByClassName('contentTable');
 let tableContainer = getId('container');
-createTable();
+if(localStorage.length > 0){
+    createTable();
+}
 function createTable() {
     let table = document.createElement("table");
     let tbody = document.createElement('tbody');
     table.classList.add('contentTable');
     table.appendChild(tbody);
     tableContainer.appendChild(table);
+    if(localStorage.length > 0){
     usersArr = getStorage(storageKeyName);
+    }
     let j = 1;
     for (let i = 0; i < usersArr.length; i++) {
 
@@ -62,14 +66,22 @@ form.addBtn.addEventListener('click', function () {
     form.login.value = "";
     form.pass.value = "";
     form.em.value = "";
-    usersArr = getStorage(storageKeyName);
-    if (checkUsers(user, usersArr)) {
-        alert('no');
-    } else {
-        usersArr.push(user);
+
+    if (localStorage.length > 0) {
+        usersArr = getStorage(storageKeyName);
+        if (checkUsers(user, usersArr)) {
+            alert('no');
+        } else {
+            usersArr.push(user);
+            updateStorage(usersArr, storageKeyName);
+            createTable();
+        }
     }
-    updateStorage(usersArr,storageKeyName);
-    createTable();
+    else {
+        usersArr.push(user);
+        updateStorage(usersArr, storageKeyName);
+        createTable();
+    }
 })
 
 let ident;
