@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 20px;
+}
+form{
+    float: left;
+    margin: 20px;
+}
+.add, .edit {
+    display: block;
+    margin-top: 10px;
+}
+
+.editBtn {
+    display: block;
+    margin-top: 10px;
+}
+table {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+.contentTable{
+    border-top: none;
+}
+
+td{
+    width: 70px;
+    text-align: center;
+}
+.dspNone{
+    display: none;
+}
