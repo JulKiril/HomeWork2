@@ -62,6 +62,7 @@ function createTable() {
 }
 
 form.addBtn.addEventListener('click', function () {
+    if(form.login.value != "" && form.pass.value != "" && form.em.value != "" ){
     let user = new User(form.login.value, form.pass.value, form.em.value);
     form.login.value = "";
     form.pass.value = "";
@@ -81,6 +82,10 @@ form.addBtn.addEventListener('click', function () {
         usersArr.push(user);
         updateStorage(usersArr, storageKeyName);
         createTable();
+    }
+    }
+    else{
+        alert("Please fill all fields");
     }
 })
 
